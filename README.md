@@ -39,14 +39,14 @@
 <br>
 
 <div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=omraut888&show_icons=true&theme=radical&hide_border=true&count_private=true&bg_color=0d1117"/>
+<img height="165" src="https://github-readme-stats-lyart-ten-80.vercel.app/api?username=omraut888&show_icons=true&theme=radical&hide_border=true&count_private=true&bg_color=0d1117"/>
 <img height="165" src="https://streak-stats.demolab.com/?user=omraut888&theme=radical&hide_border=true&background=0d1117"/>
 </div>
 
 <br>
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=omraut888&layout=compact&theme=radical&hide_border=true&bg_color=0d1117" height="165"/>
+<img src="https://github-readme-stats-lyart-ten-80.vercel.app/api/top-langs/?username=omraut888&layout=compact&theme=radical&hide_border=true&bg_color=0d1117" height="165"/>
 </div>
 
 <br>
