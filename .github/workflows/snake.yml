@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -39,6 +42,7 @@ jobs:
           sed 's/#ffffff/#0d1117/gI; s/"white"/"#0d1117"/gI' contribution-chart.svg > recolored.svg
           sudo cp recolored.svg dist/contribution-chart.svg
           sudo chmod 644 dist/contribution-chart.svg
+
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
