@@ -36,8 +36,9 @@ jobs:
 
       - name: Recolor chart background to dark
         run: |
-          sed -i 's/#ffffff/#0d1117/gI; s/"white"/"#0d1117"/gI' dist/contribution-chart.svg
-
+          sed 's/#ffffff/#0d1117/gI; s/"white"/"#0d1117"/gI' contribution-chart.svg > recolored.svg
+          sudo cp recolored.svg dist/contribution-chart.svg
+          sudo chmod 644 dist/contribution-chart.svg
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
