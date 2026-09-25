@@ -1,29 +1,41 @@
-name: generate snake
+name: Generate Contribution Visuals
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch: {}
+    - cron: "0 0 * * *"
+  workflow_dispatch:
   push:
-    branches: [ main ]
-
-permissions:
-  contents: write
+    branches:
+      - main
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - uses: Platane/snk@v3
+        id: snake
         with:
           github_user_name: omraut888
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: actions/upload-artifact@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          name: snake
-          path: dist/*.svg
+          ruby-version: '3.2'
+
+      - name: Generate contribution chart
+        run: |
+          gem install githubchart
+          githubchart -u omraut888 dist/contribution-chart.svg
+
+      - name: Recolor chart background to dark
+        run: |
+          sed -i 's/#ffffff/#0d1117/gI; s/"white"/"#0d1117"/gI' dist/contribution-chart.svg
+
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
