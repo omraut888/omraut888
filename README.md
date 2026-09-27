@@ -65,7 +65,7 @@
 <br>
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=omraut888&theme=tokyo-night&hide_border=true&bg_color=0d1117&area=true" alt="Om Raut's contribution activity" />
+<img src="https://raw.githubusercontent.com/omraut888/omraut888/output/contribution-chart.svg" alt="Om Raut's GitHub contribution graph" />
 </div>
 
 <br>
