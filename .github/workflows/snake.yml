@@ -39,7 +39,7 @@ jobs:
 
       - name: Recolor chart background to dark
         run: |
-          sed 's/#ffffff/#0d1117/gI; s/"white"/"#0d1117"/gI' contribution-chart.svg > recolored.svg
+          sed 's/#eeeeee/#161b22/g' contribution-chart.svg > recolored.svg
           sudo cp recolored.svg dist/contribution-chart.svg
           sudo chmod 644 dist/contribution-chart.svg
 
