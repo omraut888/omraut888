@@ -8,7 +8,7 @@
 
 </div>
 
-**MS Information Systems (Data Science)** @ Northeastern University · Dec 2026
+**MS Information Systems** @ Northeastern University · Dec 2026
 **Previously:** AI Developer Co-op @ [The Ticker App](https://theticker.app) — built production RAG pipelines and LLM-based grading infrastructure serving live users
 
 **Focus:** retrieval-augmented generation · multi-agent orchestration · LLM evaluation systems · applied GenAI for fintech
